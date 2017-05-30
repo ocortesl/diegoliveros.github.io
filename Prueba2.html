@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=file:///C:/Users/DIEGO%20OLIVEROS/PSP -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Tarea', 'Horas'],
+          ['Trabajo',     8],
+          ['Comida',      1],
+          ['Programar',   6],
+          ['Transporte',  1],
+          ['Ver TV',      1],
+          ['Dormir',      7]
+        ]);
+
+        var options = {
+          title: 'Mis Actividades diarias'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <link href="./Prueba2_files/style.css" rel="stylesheet">
+    <title>Programación con PSP</title>
+    </head>
+    <body class="grad1">        
+        <div id="main-container">
+        
+            <div class="tile-double lightgrey">
+                    <div id="piechart" style="width: 400px; height: 120px;"></div>        
+                    <div class="chart-total">Siempre al 100%!</div>
+            </div>
+           
+            
+           
+        </div>
+    
+</body></html>
