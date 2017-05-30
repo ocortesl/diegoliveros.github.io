@@ -1,2 +1,0 @@
-# diegoliveros.github.io
-RUT
