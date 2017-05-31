@@ -2,43 +2,27 @@
 <!-- saved from url=file:///C:/Users/DIEGO%20OLIVEROS/PSP -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawChart);
-
-      function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
-          ['Tarea', 'Horas'],
-          ['Trabajo',     8],
-          ['Comida',      1],
-          ['Programar',   6],
-          ['Transporte',  1],
-          ['Ver TV',      1],
-          ['Dormir',      7]
-        ]);
-
-        var options = {
-          title: 'Mis Actividades diarias'
-        };
-
-        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
-
-        chart.draw(data, options);
-      }
-    </script>
      <style>
   .ima {
     border-radius: 50%;
-}</style>
+}
+  .container4 {
+    height: 10em;
+    position: relative }
+.container4 {
+    margin: 0;
+   position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
+    
+    </style>
     <title>S.M Diego Iván Oliveros Acosta</title>
     </head>
-    <div style=" margin: 0 auto;
-    text-align: left;
-    width: 800px; margin: 0;
-    padding: 0;
-    text-align: center">
-    <h1>Click en el escudo para empezar a jugar...
+    <body>
+        <div class=container4>
+       <h1>Click en el escudo para empezar a jugar...
     </h1>
      <a href="./juego/html/indexGame.html"><img  src="juego/img/polifight.PNG" width="300px" height="300px" alt="Polifigters"></a>
          <a href="biblioteca_web/game.html"><img class="ima" src="biblioteca_web/img/titles1/Castle.png" width="300px" height="300px" alt="Polifigters"></a>
@@ -46,20 +30,10 @@
             Powered by <a class="footer-lin" href="">LIIS & PoliSOFT</a>
         </p>
     </div>
-    
-    <body class="grad1">   
-        <a href="../">
-        <div id="main-container">
-        
-            <div class="tile-double lightgrey">
-                    <div id="piechart" style="width: 400px; height: 120px;"></div>        
-                    <div class="chart-total">Siempre al 100%!</div>
             </div>
-                   
-           
-        </div>
-             <footer> 
+    </body>
+    <footer> 
         
     </footer>
     
-</body></html>
+</html>
