@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>ZIP k u</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/newcss.css">
+        <script src="material/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <form class="container"><br>
+            <div class="menu-buttons-salir-img">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" onclick="window.history.go(-1); return false;">
+                    <i class="material-icons">exit_to_app</i>
+                </button>
+            </div>
+            <img src="Imagenes/doctor.png"/>
+            <br><br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" formaction="menuHolter.html">
+                EXAMEN HOLTER
+            </button><br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" formaction="menuRecord.html">
+                RÉCORD DE PACIENTE
+            </button><br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" formaction="Historia.html">
+                NUEVA HISTORIA
+            </button>
+            <br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" formaction="inicioAdministrador.html">
+                CONFIGURAR D.F.E.
+            </button>
+            <br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" formaction="administrarUsuarios.html">
+                ADMINISTRAR USUARIOS
+            </button>
+            <br><br><br>
+        </form>
+    </body>
+    <footer> 
+        <p>
+            Powered by <a class="footer-lin" href="">LIIS & PoliSOFT</a>
+        </p>
+    </footer>
+</html>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Carga de Datos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/newcss.css">
+        <script src="material/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <form class="container">
+            <div class="menu-buttons">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" onclick="window.history.go(-1); return false;">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Menu1.html">
+                    <i class="material-icons">home</i>
+                </button>
+            </div>
+            <div class="menu-buttons-salir">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Inicio.html">
+                    <i class="material-icons">exit_to_app</i>
+                </button>
+            </div>
+            <h1>Carga Archivo</h1>
+            
+            <input type="file" name="file" id="file" class="inputfile" />
+
+            <table class="table"> <col width="90%"> <col width="10%">
+                <th><label for="file">Carga un archivo con extensión .cvs</label></th>
+                <th>
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+                        <i class="material-icons" id="buscar">file_upload</i>
+                        <div class="mdl-tooltip" data-mdl-for="buscar">Buscar Archivo</div>
+                    </button>
+                </th>
+            </table><br><br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" formaction="menuHolter.html">
+                CARGAR
+            </button><br>
+        </form>
+    </body>
+    <footer> 
+        <p>
+            Powered by <a class="footer-lin" href="">LIIS & PoliSOFT</a>
+        </p>
+    </footer>
+</html>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

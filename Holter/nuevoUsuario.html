@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nuevo Usuario</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/newcss.css">
+        <script src="material/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <form class="container" action="RegistrarUsuario" method="post">
+            <div class="menu-buttons">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" onclick="window.history.go(-1); return false;">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Menu1.html">
+                    <i class="material-icons">home</i>
+                </button>
+            </div>
+            <div class="menu-buttons-salir">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Inicio.html">
+                    <i class="material-icons">exit_to_app</i>
+                </button>
+            </div>
+            <h1>Agregar Usuario</h1><br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="usuario" name="usuario">
+                <label class="mdl-textfield__label" for="usuario">Usuario</label>
+            </div><br>
+            
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="password" id="password" required name="password">
+                <label class="mdl-textfield__label" for="password">Contraseña</label>
+            </div><br>
+            
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="email" name="email"  id="correoUsuario">
+                <label class="mdl-textfield__label" for="email">Correo Electrónico</label>
+            </div><br>
+            
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text"  id="rolUsuario" name="rolUsuario">
+                <label class="mdl-textfield__label" for="rolUsuario">Rol</label>
+            </div><br>
+            
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="date"  id="fechaNacimiento" name="fechaNacimiento">
+                <label class="mdl-textfield__label" for="fechaNacimiento">Fecha de Nacimiento</label>
+            </div><br><br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                AGREGAR
+            </button>
+        </form>
+    </body>
+    <footer> 
+        <p>
+            Powered by <a class="footer-lin" href="">LIIS & PoliSOFT</a>
+        </p>
+    </footer>
+</html>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

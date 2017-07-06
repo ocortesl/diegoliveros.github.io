@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Holter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/newcss.css">
+        <script src="material/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <form class="container">
+            <div class="menu-buttons">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" onclick="window.history.go(-1); return false;">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Menu1.html">
+                    <i class="material-icons">home</i>
+                </button>
+            </div>
+            <div class="menu-buttons-salir">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Inicio.html">
+                    <i class="material-icons">exit_to_app</i>
+                </button>
+            </div>
+            <h1>Configuración Holter</h1>
+            <h4>Configuración de evaluación para el examen Holter</h4>
+            <br>
+
+            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" id="tablaHolter">
+                <thead>
+                    <tr>
+                        <th>FRECUENCIA MÁXIMA</th>
+                        <th>FRECUENCIA MÍNIMA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- fila 1 -->
+                    <tr><td><input class="input" type="number" value="123"></td><td><input class="input" type="number" value="389"></td></tr>
+                    <!-- fila 2 -->
+                    <tr><td><input class="input" type="number" value="432"></td><td><input class="input" type="number" value="214"></td></tr>
+                    <!-- fila 3 -->
+                    <tr><td><input class="input" type="number" value="123"></td><td><input class="input" type="number" value="124"></td></tr>
+                    <!-- fila 4 -->
+                    <tr><td><input class="input" type="number" value="12"></td><td><input class="input" type="number" value="322"></td></tr>
+                    <!-- fila 5 -->
+                    <tr><td><input class="input" type="number" value="654"></td><td><input class="input" type="number" value="112"></td></tr>
+                    <!-- fila 6 -->
+                    <tr><td><input class="input" type="number" value="23"></td><td><input class="input" type="number" value="535"></td></tr>
+                    <!-- fila 7 -->
+                    <tr><td><input class="input" type="number" value="765"></td><td><input class="input" type="number" value="525"></td></tr>
+                    <!-- fila 8 -->
+                    <tr><td><input class="input" type="number" value="66"></td><td><input class="input" type="number" value="325"></td></tr>
+                    <!-- fila 9 -->
+                    <tr><td><input class="input" type="number" value="431"></td><td><input class="input" type="number" value="334"></td></tr>
+                    <!-- fila 10 -->
+                    <tr><td><input class="input" type="number" value="122"></td><td><input class="input" type="number" value="554"></td></tr>
+                </tbody>
+            </table>
+
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="return agregarFila();">
+                <i class="material-icons" id="mas2">add</i>
+                <div class="mdl-tooltip" data-mdl-for="mas2">Agregar Fila</div>
+            </button>
+            <br><br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" formaction="menuHolter.html">
+                GUARDAR
+            </button>
+        </form>
+    </body>
+    <footer> 
+        <p>
+            Powered by <a class="footer-lin" href="">LIIS & PoliSOFT</a>
+        </p>
+    </footer>
+    
+    <script type="text/javascript">
+    function agregarFila() {
+        table.insertRow(0);
+    }
+</script>
+</html>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
