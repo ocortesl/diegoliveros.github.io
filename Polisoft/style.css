@@ -96,6 +96,19 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 
 
+/* Background Styles */
+
+.bg-center,.bg-l-edge,.bg-r-edge,.bg-t-edge,.bg-b-edge,.bg-tl-edge,.bg-bl-edge,.bg-tr-edge,.bg-br-edge,.bg-repeat{
+	-webkit-background-size: auto!important;
+	-moz-background-size: auto!important;
+	-o-background-size: auto!important;
+	background-size: auto!important;
+}
+.bg-repeat{
+	background:repeat;
+}
+
+
 /* Background Textures */
 
 .bloc-bg-texture::before{
@@ -107,12 +120,11 @@ a:hover{text-decoration: none; cursor:pointer;}
 	left:0;
 	right:0;
 }
-.texture-pixels::before{
-	background: url("img/texture-pixel.gif");
-	background-size: 2px 2px;
-}
 .texture-darken::before{
 	background: rgba(0,0,0,0.5);
+}
+.texture-darken-strong::before{
+	background: rgba(0,0,0,0.8);
 }
 
 
@@ -201,6 +213,12 @@ a:hover{text-decoration: none; cursor:pointer;}
 	color:rgba(0,0,0,.7);
 	border-color:rgba(0,0,0,.3);
 }
+
+/* Row Margin Offsets */
+
+.voffset{
+	margin-top:30px;
+}
 /* Dividers */
 
 .b-divider-dashed{
@@ -215,6 +233,33 @@ a:hover{text-decoration: none; cursor:pointer;}
 }
 #bloc-1 h3{
 	font-size: 25px;
+}
+#bloc-13 p{
+	font-size: 16px;
+}
+#bloc-14 p{
+	font-size: 16px;
+}
+#bloc-15 p{
+	font-size: 16px;
+}
+#bloc-16 p{
+	font-size: 16px;
+}
+#bloc-17 p{
+	font-size: 16px;
+}
+#bloc-18 p{
+	font-size: 16px;
+}
+#bloc-19 p{
+	font-size: 16px;
+}
+#bloc-20 p{
+	font-size: 16px;
+}
+#bloc-21 p{
+	font-size: 16px;
 }
 
 /* = NavBar
@@ -346,6 +391,9 @@ nav .caret{
 /* = Bric adjustment margins
 -------------------------------------------------------------- */
 
+.mg-clear{
+	margin:0;
+}
 .mg-md{
 	margin-top:10px;
 	margin-bottom:20px;
@@ -374,13 +422,46 @@ button{
 	outline: none!important;
 }
 
+.btn-rd{
+	border-radius: 40px;
+}
+.btn-wire{
+	background:transparent!important;
+	border:2px solid transparent;
+}
+.btn-wire:hover{
+	background:transparent!important;
+	border:2px solid transparent;
+}
 
 /* = Icons
 -------------------------------------------------------------- */
+.icon-md{
+	font-size:30px!important;
+}
 .icon-xl{
 	font-size:100px!important;
 }
 
+/* Image Frame */
+.img-frame,.img-frame-md,.img-frame-lg,.img-frame-rd,.img-frame-rd-md,.img-frame-rd-lg{
+	background:#FFF;
+	border:1px solid rgba(0,0,0,0.1);
+	box-shadow:0 2px 2px rgba(0,0,0,0.05);
+	padding:4px;
+}
+.img-frame{
+	border-radius:3px;
+}
+.img-frame-md,.img-frame-lg{
+	border-radius:6px;
+}
+.img-frame-md,.img-frame-rd-md{
+	padding:8px;
+}
+.img-frame-lg,.img-frame-rd-lg{
+	padding:14px;
+}
 
 /* = Text Widths
 -------------------------------------------------------------- */
@@ -395,7 +476,26 @@ button{
 	margin-right: auto;
 }
 
+/* = Lists
+-------------------------------------------------------------- */
+.list-horizontal-layout li{
+	float:left;
+	margin:0 10px;
+}
+.list-sp-md li:last-child,.list-sp-lg li:last-child,.list-sp-xl li:last-child{
+	padding-bottom:0;
+}
 
+/* = Panels
+-------------------------------------------------------------- */
+.panel{
+	border:0;
+	box-shadow: 0 0 2px rgba(0,0,0,.4);
+}
+.panel-heading, .panel-footer{
+	background-color: inherit;
+	border-color: rgba(0,0,0,.1)!important;
+}
 .panel-sq, .panel-sq .panel-heading, .panel-sq .panel-footer{
 	border-radius:0;
 }
@@ -470,6 +570,39 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .blocs-hero-btn-dwn{
 	background-color:rgba(0,0,0,0.0);
 }
+.blocs-personal-panel{
+	max-width:400px;
+	min-height:400px;
+	padding:40px 10px 40px 10px;
+	background-color:#FFFFFF;
+	text-align:center;
+	border-radius:6px 6px 6px 6px;
+	border-width:0px 0px 0px 0px;
+}
+.blocs-panel-avatar{
+	max-width:100px;
+	margin-bottom:20px;
+}
+.blocs-personal-panel h3{
+	color: rgba(0,0,0,.8);
+	font-family:"Lato";
+	font-size:36px;
+	font-weight:700;
+}
+.blocs-personal-panel p{
+	color: rgba(0,0,0,.3);
+	font-family:"Lato";
+	font-size:18px;
+	font-weight:700;
+	margin-bottom:20px;
+}
+.blocs-social-list-v{
+	max-width:220px;
+	margin:0 auto!important;
+}
+.blocs-social-list-v li{
+	min-width:30px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -478,9 +611,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .bgc-white{
 	background-color:#ffffff;
-}
-.bgc-davys-grey{
-	background-color:#545454;
 }
 
 /* Text colour styles */
@@ -515,11 +645,14 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .bg-IMG-3689{
 	background-image:url("img/IMG_3689.jpg");
 }
-.bg-IMG-4880{
-	background-image:url("img/IMG_4880.jpg");
-}
 .bg-IMG-1771{
 	background-image:url("img/IMG_1771.jpg");
+}
+.bg-IMG-4018{
+	background-image:url("img/IMG_4018.jpg");
+}
+.bg-dots-bg{
+	background-image:url("img/dots-bg.png");
 }
 
 
