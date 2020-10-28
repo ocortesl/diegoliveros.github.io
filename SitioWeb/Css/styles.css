@@ -1,0 +1,544 @@
+/*=========================================*/
+
+
+/*Universales*/
+
+* {
+    padding: 0;
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+/*=========================================*/
+
+
+/*Fuentes*/
+
+@font-face {
+    font-family: "MavenPro-Regular";
+    src: url(../Fuentes/MavenPro-Regular.ttf);
+}
+
+
+/*=========================================*/
+
+
+/*Generales*/
+
+a,
+button {
+    cursor: pointer;
+}
+
+.w-section {
+    width: 100%;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+a,
+button {
+    font-family: "MavenPro-Regular";
+}
+
+p {
+    font-family: Helvetica, Arial;
+}
+
+.size-titulos {
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.size-p {
+    font-size: 1.2em;
+}
+
+
+/*=========================================*/
+
+
+/*cabecera y menu*/
+
+#cabecera {
+    background-image: url(../Img/Imgs/laptop.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+#fondo-cabecera {
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    transition: all 400ms ease-out;
+}
+
+#fondo-cabecera:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#menu {
+    width: 100%;
+    height: 10vh;
+    overflow: auto;
+    position: absolute;
+    position: fixed;
+    top: 0px;
+}
+
+#menu ul {
+    width: 70%;
+    height: 5vh;
+    margin-top: 2.5vh;
+    margin-right: 0;
+}
+
+#menu ul li {
+    display: block;
+    display: flex;
+}
+
+#menu ul li a {
+    border-right: 2px solid white;
+    padding-right: 20px;
+    color: lightgray;
+    transition: all 200ms ease;
+}
+
+#menu ul li a:nth-child(5) {
+    border: none;
+}
+
+#menu ul li a:hover {
+    transform: scale(1.2);
+    color: white;
+    border-right: none;
+}
+
+#inicio h1 {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 30vh;
+    text-align: center;
+    color: white;
+}
+
+#inicio p {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 5vh;
+    text-align: center;
+    color: white;
+}
+
+#inicio hr {
+    margin-top: 5vh;
+    width: 40%;
+}
+
+#play {
+    display: block;
+    width: 10%;
+    max-width: 100px;
+    background: none;
+    text-align: center;
+    color: white;
+    font-size: 85px;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    margin-top: 5vh;
+    transition: all 200ms ease-out;
+}
+
+#play:hover {
+    color: red;
+    font-size: 95px;
+}
+
+
+/*=========================================*/
+
+
+/*Caracteristicas y beneficios*/
+
+#caracteristicas-beneficios {
+    background: white;
+    overflow: auto;
+}
+
+#titulo-caracteristicas {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#descripcion-caracteristicas {
+    width: 70%;
+    max-width: 900px;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#caja-caracteristicas {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.w-cajas-caracteristicas {
+    width: 30%;
+    display: flex;
+}
+
+.iconos-caracteristicas {
+    font-size: 40px;
+    color: green;
+}
+
+.caracteristicas-subtitulos {
+    width: 90%;
+    max-width: 300px;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.caracteristicas-p {
+    display: block;
+    width: 75%;
+    max-width: 300px;
+    font-size: 15px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+
+/*=========================================*/
+
+
+/*galeria*/
+
+#galeria-productos {
+    background: url(../Img/Imgs/laptop-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    overflow: auto;
+}
+
+#galeria-productos h1 {
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#galeria-productos p {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 5vh;
+    text-align: center;
+}
+
+#imagenes {
+    width: 100%;
+    height: 350px;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+}
+
+.cajas-imagenes {
+    width: 30%;
+    height: 300px;
+}
+
+#img1 {
+    background-image: url(../Img/Imgs/imagen1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img2 {
+    background-image: url(../Img/Imgs/imagen2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img3 {
+    background-image: url(../Img/Imgs/imagen3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*=========================================*/
+
+
+/*Testimonios*/
+
+#testimonios {
+    overflow: hidden;
+}
+
+#titulos-testimonios {
+    text-align: center;
+    margin-top: 15vh;
+    color: gray;
+}
+
+#testimonios hr {
+    width: 60%;
+    text-align: center;
+    color: gray;
+    margin-top: 3vh;
+}
+
+#caja-testimonios {
+    width: 150%;
+    height: 300px;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    margin-left: -25%;
+    animation: testimonios 30s infinite ease alternate;
+}
+
+@keyframes testimonios {
+    0% {
+        margin-left: 25%;
+    }
+    31% {
+        margin-left: 25%;
+    }
+    33% {
+        margin-left: -25%;
+    }
+    64% {
+        margin-left: -25%;
+    }
+    66% {
+        margin-left: -75%;
+    }
+    100% {
+        margin-left: -75%;
+    }
+}
+
+#testimonio-1,
+#testimonio-2,
+#testimonio-3 {
+    width: 30%;
+    border: 1px solid gray;
+    min-height: 200px;
+    padding: 50px;
+}
+
+.testimonios-p {
+    text-align: center;
+    color: gray;
+}
+
+#caja-testimonios hr {
+    width: 70%;
+    margin-top: 10px;
+    color: lightgray;
+}
+
+.nombre-testimonios {
+    margin-top: 10px;
+    color: gray;
+    text-align: center;
+}
+
+
+/*=========================================*/
+
+
+/*ponte en contacto*/
+
+#ponte-en-contacto {
+    background: url(../Img/Imgs/lapices.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#formulario-1 h1 {
+    text-align: center;
+    color: gray;
+}
+
+#formulario-1 {
+    width: 50%;
+    max-width: 700px;
+    height: 60vh;
+    overflow: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+#formulario-1 p {
+    margin-top: 3vh;
+    color: gray;
+    text-align: center;
+}
+
+#mensaje {
+    width: 100%;
+    height: 100px;
+    margin-top: 3vh;
+    padding: 5px;
+    border-radius: 5px;
+    color: gray;
+    outline: none;
+    border: 2px solid gray;
+}
+
+#tu-correo,
+#nombre-completo {
+    width: 30%;
+    height: 30px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 5%;
+    border: 2px solid gray;
+    outline: none;
+    float: left;
+}
+
+#enviar {
+    width: 30%;
+    height: 30px;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid gray;
+    outline: none;
+    background: gray;
+    color: white;
+}
+
+#enviar:hover {
+    background: blue;
+    color: white;
+    border: none;
+}
+
+
+/*=========================================*/
+
+
+/*Descargar la app*/
+
+#descargar-app {
+    background: url(../Img/Imgs/FondoTextura.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    overflow: auto;
+}
+
+#descargar-app h1 {
+    text-align: center;
+    margin-top: 30vh;
+}
+
+#descargar-app p {
+    display: block;
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#descargar {
+    display: block;
+    width: 15%;
+    height: 40px;
+    text-align: center;
+    margin-top: 10vh;
+    margin: 10vh 0 0 0 auto;
+    border: 2px solid gray;
+    outline: none;
+    background: gray;
+    font-family: Helvetica;
+    color: white;
+    transition: all 400ms ease;
+}
+
+#descargar:hover {
+    width: 16%;
+    height: 45px;
+    background: blue;
+    border: none;
+}
+
+
+/*=========================================*/
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    overflow: auto;
+}
+
+#menu-footer {
+    width: 70%;
+    height: 5vh;
+    margin-top: 3vh;
+}
+
+#menu-footer li {
+    display: block;
+    display: flex;
+}
+
+#menu-footer li a {
+    border-right: 2px solid white;
+    padding-right: 20px;
+    color: lightgray;
+    transition: all 200ms ease;
+}
+
+#menu-footer li a:nth-child(5) {
+    border: none;
+}
+
+#menu-footer li a:hover {
+    transform: scale(1.2);
+    color: white;
+    border-right: none;
+}
+
+#copyright {
+    margin-top: 3vh;
+    text-align: center;
+    color: white;
+}

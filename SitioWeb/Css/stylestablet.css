@@ -1,0 +1,82 @@
+    @media screen and (max-width: 768px) {
+        /*Generales*/
+        .size-titulos {
+            font-size: 1.8em;
+        }
+        .size-p {
+            font-size: 1em;
+        }
+        /*=========================================*/
+        /*cabecera y menu*/
+        #menu ul {
+            width: 90%;
+            margin: 0 auto;
+        }
+        #inicio h1 {
+            width: 100%;
+            margin-top: 30vh;
+        }
+        #inicio p {
+            margin-top: 5vh;
+        }
+        #play {
+            font-size: 60px;
+        }
+        #play:hover {
+            font-size: 70px;
+        }
+        /*=========================================*/
+        /*Caractersiticas y beneficios*/
+        .w-cajas-caracteristicas {
+            flex-direction: column;
+            justify-content: center;
+        }
+        .iconos-caracteristicas {
+            text-align: center;
+        }
+        .caracteristicas-subtitulos {
+            width: 100%;
+            max-width: 500px;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-left: 0px;
+            text-align: center;
+        }
+        .caracteristicas-p {
+            margin: 10px auto;
+            text-align: center;
+        }
+        /*=========================================*/
+        /*galeria*/
+        #imagenes {
+            height: 300px;
+        }
+        .cajas-imagenes {
+            height: 250px;
+        }
+        /*=========================================*/
+        /*Testimonios*/
+        #testimonio-1,
+        #testimonio-2,
+        #testimonio-3 {
+            padding: 20px;
+        }
+        .testimonios-p {
+            font-size: 0.9em;
+        }
+        /*=========================================*/
+        /*ponte en contacto*/
+        #formulario-1 {
+            width: 70%;
+        }
+        /*=========================================*/
+        /*Descargar la app*/
+        #descargar {
+            width: 20%;
+            height: 45px;
+        }
+        #descargar:hover {
+            width: 22%;
+            height: 50px;
+        }
+    }
