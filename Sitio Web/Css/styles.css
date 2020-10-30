@@ -92,10 +92,11 @@ p {
     position: absolute;
     position: fixed;
     top: 0px;
+    z-index: 99;
 }
 
 #menu ul {
-    width: 70%;
+    width: 65%;
     height: 5vh;
     margin-top: 2.5vh;
     margin-right: 0;
@@ -108,7 +109,7 @@ p {
 
 #menu ul li a {
     border-right: 2px solid white;
-    padding-right: 20px;
+    padding-right: 10px;
     color: lightgray;
     transition: all 200ms ease;
 }
@@ -162,6 +163,14 @@ p {
 #play:hover {
     color: red;
     font-size: 95px;
+}
+
+#menu-movil {
+    display: none;
+}
+
+#menu-movil-flotante {
+    display: none;
 }
 
 
@@ -374,22 +383,17 @@ p {
 /*ponte en contacto*/
 
 #ponte-en-contacto {
-    background: url(../Img/Imgs/lapices.jpg);
+    background: url(../Img/Imgs/Equipo.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
 
-#formulario-1 h1 {
-    text-align: center;
-    color: gray;
-}
-
 #formulario-1 {
-    width: 50%;
+    width: 60%;
     max-width: 700px;
-    height: 60vh;
+    max-height: 65vh;
     overflow: auto;
     position: absolute;
     top: 0px;
@@ -397,6 +401,15 @@ p {
     right: 0px;
     bottom: 0px;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#formulario-1 h1 {
+    margin-top: 3%;
+    text-align: center;
+    color: gray;
 }
 
 #formulario-1 p {
@@ -522,7 +535,8 @@ footer {
 
 #menu-footer li a {
     border-right: 2px solid white;
-    padding-right: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
     color: lightgray;
     transition: all 200ms ease;
 }
