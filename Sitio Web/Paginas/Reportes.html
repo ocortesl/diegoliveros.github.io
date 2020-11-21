@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>ProyectoCurricular</title>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="../Css/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../Css/stylestablet.css">
+
+    <link rel="stylesheet" type="text/css" href="../Css/stylesmovil.css">
+
+    <link rel="icon" href="">
+
+    <script src="https://kit.fontawesome.com/4cc2b1b377.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="../JavaScript/jQuery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js" integrity="sha512-hZf9Qhp3rlDJBvAKvmiG+goaaKRZA6LKUO35oK6EsM0/kjPK32Yw7URqrq3Q+Nvbbt8Usss+IekL7CRn83dYmw==" crossorigin="anonymous"></script>
+
+
+
+    <script>
+        $(document).ready(function() {
+
+            //----------------------------- script estadisticas por credito de asignatura -----------------------------
+
+            var stats1 = document.getElementById("chart-estadisticas-asignatura").getContext("2d");
+            var myChart1 = new Chart(stats1, {
+                type: "bar",
+                data: {
+                    labels: ["Categoria 1", "Categoria 2", "Categoria 3", "Categoria 4"],
+                    datasets: [{
+                        label: "Datos 1",
+                        data: [4.3, 2.5, 3.5, 4.5],
+                        backgroundColor: [
+                            "rgb(0, 102, 255, 0.7)",
+                            "rgb(0, 102, 255, 0.7)",
+                            "rgb(0, 102, 255, 0.7)",
+                            "rgb(0, 102, 255, 0.7)"
+                        ]
+
+                    }, {
+                        label: "Datos 2",
+                        data: [2.3, 4.5, 1.8, 2.8],
+                        backgroundColor: [
+                            "rgb(255, 69, 0, 0.7)",
+                            "rgb(255, 69, 0, 0.7)",
+                            "rgb(255, 69, 0, 0.7)",
+                            "rgb(255, 69, 0, 0.7)"
+                        ]
+                    }, {
+                        label: "Datos 3",
+                        data: [2, 2, 3, 5],
+                        backgroundColor: [
+                            "rgb(128, 128, 128, 0.7)",
+                            "rgb(128, 128, 128, 0.7)",
+                            "rgb(128, 128, 128, 0.7)",
+                            "rgb(128, 128, 128, 0.7)"
+                        ]
+                    }]
+
+
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                },
+
+                options: {
+                    responsive: true
+                }
+            })
+
+            //----------------------------------------------------------------------------------------------
+
+            //----------------------------- script estadisticas por materias -----------------------------
+
+            var stats2 = document.getElementById("chart-estadisticas-materias").getContext("2d");
+            var myChart2 = new Chart(stats2, {
+                type: "pie",
+                data: {
+                    labels: ["1st Qtr", "2nd Qtr", "3rd Qtr", "4th Qtr"],
+                    datasets: [{
+                        data: [60, 20, 10, 10],
+                        backgroundColor: [
+                            "rgb(0, 102, 255, 0.7)",
+                            "rgb(255, 69, 0, 0.7)",
+                            "rgb(128, 128, 128, 0.7)",
+                            "rgb(255, 255, 0)"
+                        ]
+
+                    }]
+
+
+                },
+
+                options: {
+                    responsive: true
+                }
+
+            })
+
+            //----------------------------------------------------------------------------------------------
+
+            //----------------------------- script estadisticas por inscritos -----------------------------
+
+            var stats3 = document.getElementById("chart-estadisticas-inscritos").getContext("2d");
+            var myChart3 = new Chart(stats3, {
+                type: "horizontalBar",
+                data: {
+                    labels: ["Categoria 1", "Categoria 2", "Categoria 3", "Categoria 4"],
+                    datasets: [{
+                        label: "Datos 1",
+                        data: [4.3, 2.3, 3.7, 4.5],
+                        backgroundColor: [
+                            "rgb(0, 102, 255, 0.7)",
+                            "rgb(0, 102, 255, 0.7)",
+                            "rgb(0, 102, 255, 0.7)",
+                            "rgb(0, 102, 255, 0.7)"
+                        ]
+
+                    }, {
+                        label: "Datos 2",
+                        data: [6.5, 6.6, 5.5, 7.5],
+                        backgroundColor: [
+                            "rgb(255, 69, 0, 0.7)",
+                            "rgb(255, 69, 0, 0.7)",
+                            "rgb(255, 69, 0, 0.7)",
+                            "rgb(255, 69, 0, 0.7)"
+                        ]
+
+                    }, {
+                        label: "Datos 3",
+                        data: [8.5, 8.6, 8.2, 12.3],
+                        backgroundColor: [
+                            "rgb(128, 128, 128, 0.7)",
+                            "rgb(128, 128, 128, 0.7)",
+                            "rgb(128, 128, 128, 0.7)",
+                            "rgb(128, 128, 128, 0.7)"
+                        ]
+
+                    }]
+
+
+                },
+                options: {
+                    scales: {
+                        xAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }]
+                    }
+                }
+            })
+
+        })
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <!--Menús-->
+
+    <div class="menu">
+
+        <ul>
+            <li><a href="../ProyectoCurricular.html">Modulos</a>
+                <ul>
+
+                    <li><a href="Encuestas.html">Encuestas</a></li>
+
+                    <li><a href="Reportes.html">Reportes</a></li>
+
+                    <li><a href="PropositosDeFormacion.html">Propósitos de formación</a></li>
+
+                    <li><a href="EstrategiasDidacticas.html">Estrategias didácticas</a></li>
+
+                    <li><a href="Necesidades.html">Necesidades</a></li>
+
+                    <li><a href="Repositorio.html">Repositorio</a></li>
+
+                </ul>
+            </li>
+
+            <li><a href="../ProyectoCurricular.html">Nosotros</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Institucíones</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Descargas</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Contacto</a></li>
+
+        </ul>
+    </div>
+
+    <!--Barra menu movil-->
+
+    <div class="barra-menu-movil">
+
+        <i class="fas fa-bars icono-menu-movil"></i>
+    </div>
+
+
+    <!--Menu movil-->
+
+    <div class="menu-movil-flotante">
+
+        <i class="fas fa-times-circle x-menu-movil"></i>
+
+        <ul>
+
+            <li><a href="../ProyectoCurricular.html">Modulos</a></li>
+
+            <li><a href="Encuestas.html">Encuestas</a></li>
+
+            <li><a href="Reportes.html">Reportes</a></li>
+
+            <li><a href="PropositosDeFormacion.html">Propósitos de formación</a></li>
+
+            <li><a href="EstrategiasDidacticas.html">Estrategias didácticas</a></li>
+
+            <li><a href="Necesidades.html">Necesidades</a></li>
+
+            <li><a href="Repositorio.html">Repositorio</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Nosotros</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Institucíones</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Descargas</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Contacto</a></li>
+
+        </ul>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------->
+
+    <!-- Header -->
+
+    <div id="header-reportes">
+
+        <div id="fondo2-header-reportes">
+
+            <h1 class="size-titulos">REPORTES</h1>
+
+        </div>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------->
+
+    <!-- Creditos por asignatura -->
+
+    <div id="creditos-asignatura">
+
+        <h1 class="size-titulos">Créditos por asignatura</h1>
+
+        <hr class="hr-titulos">
+
+        <canvas id="chart-estadisticas-asignatura"></canvas>
+
+        <div id="series">
+
+            <p class="series-p"><i class="fas fa-square-full"></i> Serie 1</p>
+
+            <p class="series-p"><i class="fas fa-square-full"></i> Serie 2</p>
+
+            <p class="series-p"><i class="fas fa-square-full"></i> Serie 3</p>
+
+        </div>
+
+        <hr class="hr-seccion">
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------->
+
+    <!-- Materias -->
+
+    <div id="materias">
+
+        <h1 class="size-titulos">Materias</h1>
+
+        <hr class="hr-titulos">
+
+        <canvas id="chart-estadisticas-materias"></canvas>
+
+        <hr class="hr-seccion">
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------->
+
+    <!-- Inscritos -->
+
+    <div id="inscritos">
+
+        <h1 class="size-titulos">Número de inscritos</h1>
+
+        <hr class="hr-titulos">
+
+        <canvas id="chart-estadisticas-inscritos"></canvas>
+
+        <div id="inscritos-series">
+
+            <p class="inscritos-series-p"><i class="fas fa-grip-lines"></i> Series 1</p>
+
+            <p class="inscritos-series-p"><i class="fas fa-grip-lines"></i> Series 2</p>
+
+            <p class="inscritos-series-p"><i class="fas fa-grip-lines"></i> Series 3</p>
+
+        </div>
+
+    </div>
+
+    <!---------------------------------------------------------------------------------------------->
+
+    <footer>
+
+        <ul class="menu-footer">
+
+            <li><a href="../ProyectoCurricular.html">Features</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Nosotros</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Testimonios</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Descargas</a></li>
+
+            <li><a href="../ProyectoCurricular.html">Contacto</a></li>
+        </ul>
+
+        <p class="copyright">©COPYRIGHT/HERRAMIENTACURRICULAR2020</p>
+
+    </footer>
+
+    <script type="text/javascript" src="../JavaScript/Interactividad.js"></script>
+
+</body>
+
+</html>

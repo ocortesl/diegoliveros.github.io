@@ -15,10 +15,10 @@
     #fondo-cabecera {
         height: 70vh;
     }
-    #menu {
+    .menu {
         display: none;
     }
-    #menu-movil {
+    .barra-menu-movil {
         display: block;
         width: 100%;
         height: 7vh;
@@ -26,23 +26,54 @@
         position: absolute;
         position: fixed;
         top: 0px;
+        padding: 5px 10px;
+        text-align: right;
         background-color: white;
         z-index: 99;
         box-shadow: 0px 1px 5px gray;
     }
-    #menu-movil ul {
+    .icono-menu-movil {
+        font-size: 30px;
+    }
+    .menu-movil-flotante {
+        display: block;
         width: 100%;
-        height: 5vh;
-        margin-top: 1.5vh;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        z-index: 999;
+        padding: 10px;
     }
-    #menu ul li {
-        width: 97%;
+    .x-menu-movil {
+        color: white;
+        font-size: 30px;
+        position: absolute;
+        right: 15px;
     }
-    #menu ul li a {
-        width: 18%;
-        padding-right: 5px;
-        font-size: 0.7em;
+    .menu-movil-flotante ul {
+        width: 90%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        padding: 10px;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .menu-movil-flotante ul li {
+        width: 100%;
+        height: 15vh;
+        font-size: 1.2em;
         text-align: center;
+    }
+    .menu-movil-flotante ul li a {
+        color: white;
     }
     #inicio h1 {
         width: 90%;
@@ -127,13 +158,165 @@
     }
     /*=========================================*/
     /*Footer*/
-    #menu-footer {
-        width: 100%;
+    .menu-footer {
+        width: 95%;
     }
-    #menu-footer li a {
+    .menu-footer li a {
         font-size: 0.9em;
     }
-    #menu-footer li a {
+    .menu-footer li a {
         padding-right: 10px;
+    }
+    /*======================================================================================================================================================*/
+    /*=====================================================================
+    =======================================================================
+    Pagina encuestas*/
+    #encuestas-contenedor {
+        width: 100%;
+    }
+    #imagen-encuesta,
+    #fondo2-imagen-encuesta {
+        height: 40vh;
+    }
+    #fondo2-imagen-encuesta h1 {
+        margin-top: 15vh;
+    }
+    /*======================================================================================================================================================*/
+    /*=====================================================================
+    =======================================================================
+    Pagina reportes*/
+    #header-reportes {
+        height: 40vh;
+    }
+    #fondo2-header-reportes h1 {
+        margin-top: 15vh;
+    }
+    /*=========================================*/
+    /*titulos y cajas*/
+    #creditos-asignatura,
+    #materias,
+    #inscritos {
+        min-height: 80vh;
+    }
+    /*=========================================*/
+    /* Graficas */
+    #chart-estadisticas-asignatura,
+    #chart-estadisticas-materias,
+    #chart-estadisticas-inscritos {
+        max-width: 450px;
+    }
+    /*=========================================*/
+    /*Series e iconos*/
+    #series,
+    #inscritos-series {
+        width: 70%;
+    }
+    /*======================================================================================================================================================*/
+    /*=====================================================================
+    =======================================================================
+    Pagina Propositos de formación*/
+    #header-propositos {
+        height: 40vh;
+        background-position: center center;
+    }
+    #fondo2-header-propositos h1 {
+        margin-top: 15vh;
+    }
+    #propositos-caja h2 {
+        margin-top: 7vh;
+    }
+    /*Botones filtar*/
+    .bnt-filtro-todo,
+    .bnt-filtro-nombre,
+    .bnt-filtro-codigo,
+    .bnt-filtro-nivel1,
+    .bnt-filtro-nivel2,
+    .bnt-filtro-nivel3 {
+        font-size: 1em;
+    }
+    /*Tabla*/
+    #tabla-propositos th:nth-child(2) {
+        width: 30%;
+    }
+    #tabla-propositos td {
+        padding: 15px;
+    }
+    /*======================================================================================================================================================*/
+    /*=====================================================================
+    =======================================================================
+    Pagina Estrategias didácticas*/
+    #header-estrategias {
+        height: 40vh;
+    }
+    #fondo2-header-estrategias h1 {
+        margin-top: 15vh;
+    }
+    #estrategias-caja h2 {
+        margin-top: 7vh;
+    }
+    /*Tabla*/
+    #tabla-estrategias tr td:nth-child(3) {
+        width: 60%;
+        padding: 10px;
+    }
+    .td-sinfondo,
+    #th-ilustracion {
+        display: none;
+    }
+    #tabla-estrategias tr td {
+        font-size: 0.8em;
+    }
+    /*======================================================================================================================================================*/
+    /*=====================================================================
+    =======================================================================
+    Pagina Necesidades*/
+    #header-necesidades {
+        height: 40vh;
+    }
+    #fondo2-header-necesidades h1 {
+        margin-top: 15vh;
+    }
+    #btns-guardar-compartir {
+        margin-right: 0px;
+        width: 50%;
+    }
+    #guardar,
+    #compartir {
+        padding: 3px;
+        margin-left: 3px;
+        margin-right: 10px;
+    }
+    #necesidades-caja h2 br {
+        display: block;
+    }
+    /*======================================================================================================================================================*/
+    /*=====================================================================
+    =======================================================================
+    Pagina Repositorio*/
+    #header-repositorio {
+        height: 40vh;
+    }
+    #fondo2-header-repositorio h1 {
+        margin-top: 15vh;
+    }
+    .cajas-caract-repositorio,
+    #repositorio-subtitulo {
+        width: 90%;
+    }
+    #repositorio-titulo {
+        margin-top: 30px;
+    }
+    #repositorio-subtitulo {
+        margin-bottom: 50px;
+    }
+    .titulos-caract-repositorio {
+        font-size: 2.5em;
+        font-weight: 400;
+    }
+    .w-caja-img-caract-repositorio {
+        height: 40vh;
+    }
+    .conector {
+        height: 100px;
     }
 }

@@ -47,7 +47,10 @@ button {
     font-family: "MavenPro-Regular";
 }
 
-p {
+p,
+label,
+td,
+th {
     font-family: Helvetica, Arial;
 }
 
@@ -58,6 +61,19 @@ p {
 
 .size-p {
     font-size: 1.2em;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: center;
 }
 
 
@@ -82,46 +98,81 @@ p {
 }
 
 #fondo-cabecera:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
 }
 
-#menu {
+.menu {
     width: 100%;
     height: 10vh;
-    overflow: auto;
     position: absolute;
     position: fixed;
     top: 0px;
-    z-index: 99;
+    z-index: 999;
 }
 
-#menu ul {
+.menu-con-fondo {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.menu ul {
     width: 65%;
     height: 5vh;
     margin-top: 2.5vh;
     margin-right: 0;
-}
-
-#menu ul li {
-    display: block;
     display: flex;
 }
 
-#menu ul li a {
+.menu ul li {
+    transition: all 200ms ease;
+    position: relative;
+}
+
+.menu ul li a {
     border-right: 2px solid white;
     padding-right: 10px;
     color: lightgray;
     transition: all 200ms ease;
 }
 
-#menu ul li a:nth-child(5) {
+.menu ul li:nth-child(5) a {
     border: none;
 }
 
-#menu ul li a:hover {
+.menu ul li:hover {
     transform: scale(1.2);
     color: white;
     border-right: none;
+}
+
+.menu ul li a:hover {
+    color: white;
+    border-right: none;
+}
+
+.menu li>ul {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 10px;
+    width: 250px;
+    flex-direction: column;
+}
+
+.menu li ul li {
+    display: block;
+    width: 90%;
+    background-color: black;
+    padding: 10px;
+    margin-left: 0;
+}
+
+.menu li ul li a {
+    display: block;
+    border: none;
+}
+
+.menu li:hover>ul {
+    display: block;
 }
 
 #inicio h1 {
@@ -165,11 +216,11 @@ p {
     font-size: 95px;
 }
 
-#menu-movil {
+.barra-menu-movil {
     display: none;
 }
 
-#menu-movil-flotante {
+.menu-movil-flotante {
     display: none;
 }
 
@@ -403,7 +454,6 @@ p {
     margin: auto;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
-    border-radius: 5px;
 }
 
 #formulario-1 h1 {
@@ -522,18 +572,18 @@ footer {
     overflow: auto;
 }
 
-#menu-footer {
+.menu-footer {
     width: 70%;
     height: 5vh;
     margin-top: 3vh;
-}
-
-#menu-footer li {
-    display: block;
     display: flex;
 }
 
-#menu-footer li a {
+.menu-footer li {
+    transition: all 200ms ease;
+}
+
+.menu-footer li a {
     border-right: 2px solid white;
     padding-right: 10px;
     padding-left: 10px;
@@ -541,18 +591,866 @@ footer {
     transition: all 200ms ease;
 }
 
-#menu-footer li a:nth-child(5) {
+.menu-footer li:nth-child(5) a {
     border: none;
 }
 
-#menu-footer li a:hover {
+.menu-footer li:hover,
+.menu-footer li a:hover {
     transform: scale(1.2);
     color: white;
     border-right: none;
 }
 
-#copyright {
+.copyright {
     margin-top: 3vh;
     text-align: center;
     color: white;
+}
+
+
+/*======================================================================================================================================================*/
+
+
+/*=====================================================================
+=======================================================================
+
+Pagina encuestas*/
+
+#encuestas-contenedor {
+    width: 80%;
+    max-width: 900px;
+    min-height: 500px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+/*Header*/
+
+#imagen-encuesta {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../Img/Imgs/MaterialesEstudio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#fondo2-imagen-encuesta {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 400ms ease-out;
+}
+
+#fondo2-imagen-encuesta:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#fondo2-imagen-encuesta h1 {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+
+/*Encuesta*/
+
+#caja-encuesta {
+    width: 90%;
+    margin-top: 30px;
+    color: gray;
+}
+
+#caja-encuesta hr {
+    width: 80%;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+#p-condiciones {
+    display: block;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+#encuesta-1 {
+    width: 90%;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+#pregunta-nombre,
+#pregunta-correo,
+#pregunta-3,
+#pregunta-4 {
+    width: 50%;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    margin-top: 10px;
+}
+
+#pregunta-nombre:focus,
+#pregunta-correo:focus,
+#pregunta-3:focus,
+#pregunta-4:focus {
+    border-bottom: 1px solid black;
+}
+
+#nota-1 {
+    color: black;
+    margin-top: 15px;
+}
+
+#enviar-encuesta {
+    display: block;
+    width: 10%;
+    height: 25px;
+    text-align: center;
+    margin-left: 0px;
+    border: 2px solid gray;
+    outline: none;
+    background: gray;
+    font-family: Helvetica;
+    color: white;
+    transition: all 400ms ease;
+    cursor: pointer;
+}
+
+#enviar-encuesta:hover {
+    width: 11%;
+    height: 28px;
+    background: blue;
+    border: none;
+}
+
+
+/*=====================================================================*/
+
+
+/*=====================================================================
+=======================================================================
+
+
+Pagina reportes*/
+
+
+/*Header*/
+
+#header-reportes {
+    width: 100%;
+    height: 60vh;
+    background: url(../Img/Imgs/Reportes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+}
+
+#fondo2-header-reportes {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 400ms ease-out;
+}
+
+#fondo2-header-reportes:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#fondo2-header-reportes h1 {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+
+/*titulos y cajas*/
+
+#creditos-asignatura,
+#materias,
+#inscritos {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 100px;
+}
+
+.hr-titulos {
+    width: 60%;
+    height: 2px;
+    background-color: gray;
+    margin-top: 30px;
+}
+
+.hr-seccion {
+    width: 80%;
+    height: 2px;
+    background-color: gray;
+    margin-top: 30px;
+}
+
+#creditos-asignatura h1,
+#materias h1,
+#inscritos h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* Graficas */
+
+#chart-estadisticas-asignatura,
+#chart-estadisticas-materias,
+#chart-estadisticas-inscritos {
+    max-width: 900px;
+    margin-top: 30px;
+}
+
+
+/*Series e iconos*/
+
+#series,
+#inscritos-series {
+    width: 30%;
+    display: flex;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.series-p:nth-child(1) i,
+.inscritos-series-p:nth-child(1) i {
+    color: #0288D1;
+}
+
+.series-p:nth-child(2) i,
+.inscritos-series-p:nth-child(2) i {
+    color: #ff4500;
+}
+
+.series-p:nth-child(3) i,
+.inscritos-series-p:nth-child(3) i {
+    color: gray;
+}
+
+
+/*======================================================================================================================================================*/
+
+
+/*=====================================================================
+=======================================================================
+
+Pagina Propositos de formación*/
+
+#header-propositos {
+    width: 100%;
+    height: 60vh;
+    background: url(../Img/Imgs/Equipo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -300px;
+}
+
+#fondo2-header-propositos {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 400ms ease-out;
+}
+
+#fondo2-header-propositos:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#fondo2-header-propositos h1 {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+#propositos-caja {
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 70px;
+}
+
+#propositos-caja h2 {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+
+/*Botones filtar*/
+
+.btns-filtro {
+    width: 50%;
+    display: flex;
+    margin-top: 30px;
+}
+
+.buscadores {
+    width: 50%;
+    margin-top: 10px;
+    display: none;
+}
+
+.buscarxnombre,
+.buscarxcodigo {
+    width: 100%;
+    height: 25px;
+    padding: 4px;
+    border: none;
+    border-bottom: 1px gray solid;
+    outline: none;
+    display: none;
+}
+
+.buscarxnombre:focus,
+.buscarxcodigo:focus {
+    border-bottom: 1px blue solid;
+}
+
+.nivel1 {
+    background-color: rgba(255, 255, 0, 0.5);
+    display: none;
+}
+
+.nivel2 {
+    background-color: rgba(0, 0, 255, 0.5);
+    display: none;
+}
+
+.nivel3 {
+    background-color: rgba(255, 0, 0, 0.7);
+    display: none;
+}
+
+.bnt-filtro-todo,
+.bnt-filtro-nombre,
+.bnt-filtro-codigo,
+.bnt-filtro-nivel1,
+.bnt-filtro-nivel2,
+.bnt-filtro-nivel3 {
+    width: 100px;
+    background: none;
+    font-size: 1.1em;
+    color: gray;
+    border: none;
+    padding: 4px;
+    outline: none;
+    transition: all 400ms ease-out;
+}
+
+.bnt-filtro-todo:hover,
+.bnt-filtro-nombre:hover,
+.bnt-filtro-codigo:hover {
+    color: white;
+    background: blue;
+}
+
+.bnt-filtro-nivel1:hover {
+    color: white;
+    background-color: yellow;
+}
+
+.bnt-filtro-nivel2:hover {
+    color: white;
+    background-color: blue;
+}
+
+.bnt-filtro-nivel3:hover {
+    color: white;
+    background-color: red;
+}
+
+
+/*Tabla*/
+
+#tabla-propositos {
+    width: 90%;
+    margin-top: 30px;
+}
+
+
+/*======================================================================================================================================================*/
+
+
+/*=====================================================================
+=======================================================================
+
+Pagina Estrategias didácticas*/
+
+#header-estrategias {
+    width: 100%;
+    height: 60vh;
+    background: url(../Img/Imgs/didactico.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondo2-header-estrategias {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 400ms ease-out;
+}
+
+#fondo2-header-estrategias:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#fondo2-header-estrategias h1 {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+#estrategias-caja {
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 70px;
+}
+
+#estrategias-caja h2 {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#tabla-estrategias {
+    width: 90%;
+    margin-top: 30px;
+}
+
+#tabla-estrategias tr td:nth-child(3) {
+    text-align: left;
+    padding: 10px;
+    width: 40%;
+}
+
+.td-sinfondo {
+    background: white;
+}
+
+
+/* Nota: este apartado tanto muchos de sus estilos como su funcionalidad los comparte con la pagina de Propositos de formacion los cuales estan declarados/dados inmediatamente anterior a los dados a esta pagina*/
+
+
+/*======================================================================================================================================================*/
+
+
+/*=====================================================================
+=======================================================================
+
+Pagina Necesidades*/
+
+#header-necesidades {
+    width: 100%;
+    height: 60vh;
+    background: url(../Img/Imgs/pensar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondo2-header-necesidades {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 400ms ease-out;
+}
+
+#fondo2-header-necesidades:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#fondo2-header-necesidades h1 {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+#necesidades-caja {
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 70px;
+}
+
+#necesidades-enlaces {
+    width: 90%;
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#necesidades-enlaces p {
+    margin-left: 0px;
+}
+
+#necesidades-enlaces p a {
+    color: gray;
+}
+
+#necesidades-enlaces p a:hover {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+#btns-guardar-compartir {
+    margin-right: 30px;
+}
+
+#guardar,
+#compartir {
+    background: none;
+    padding: 5px;
+    border: 1px solid gray;
+    margin-left: 10px;
+    transition: all 300ms ease-out;
+    outline: none;
+}
+
+#guardar:hover,
+#compartir:hover {
+    background: blue;
+    color: white;
+    border: none;
+    transform: scale(1.1);
+}
+
+#btns-pestañas {
+    width: 90%;
+    display: flex;
+    margin-top: 30px;
+}
+
+#btns-pestañas button {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    margin-left: 10px;
+    transition: all 300ms ease-out;
+    outline: none;
+}
+
+#btns-pestañas button:hover {
+    background: gray;
+    color: white;
+}
+
+#btn-educacion-general,
+#btn-tecnico-profesional,
+#btn-media-artistica,
+#btn-jovenes-adultos {
+    background: #F2F2F2;
+    color: gray;
+}
+
+#btn-humanista-cientifico {
+    background: gray;
+    color: white;
+}
+
+#necesidades-caja h2 {
+    display: block;
+    width: 90%;
+    margin-top: 30px;
+}
+
+#necesidades-caja h2 br {
+    display: none;
+}
+
+#tabla-necesidades {
+    width: 90%;
+    margin-top: 30px;
+}
+
+#tabla-necesidades,
+#tabla-necesidades th,
+#tabla-necesidades td {
+    overflow: auto;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 10px 20px;
+}
+
+#ciencias-ciudadania td:nth-child(1) {
+    border-left: 6px #00C281 solid;
+}
+
+#ciencias-ciudadania td p {
+    display: block;
+    background-color: #00C281;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.td-dobles p {
+    float: left;
+}
+
+.td-dobles p:nth-child(2) {
+    margin-left: 10px;
+}
+
+#educacion-ciudadania td:nth-child(1) {
+    border-left: 6px #5393C3 solid;
+}
+
+#educacion-ciudadania td:nth-child(2),
+#educacion-ciudadania td:nth-child(3) {
+    background-color: #5393C3;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#filosofia td:nth-child(1) {
+    border-left: 6px gray solid;
+}
+
+#filosofia td:nth-child(2),
+#filosofia td:nth-child(3) {
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#ingles td:nth-child(1) {
+    border-left: 6px #DB5162 solid;
+}
+
+#ingles td:nth-child(2),
+#ingles td:nth-child(3) {
+    background-color: #DB5162;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#lengua-literatura td:nth-child(1) {
+    border-left: 6px #FF6B2A solid;
+}
+
+#lengua-literatura td:nth-child(2),
+#lengua-literatura td:nth-child(3) {
+    background-color: #FF6B2A;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#matematicas td:nth-child(1) {
+    border-left: 6px #D458AF solid;
+}
+
+#matematicas td:nth-child(2),
+#matematicas td:nth-child(3) {
+    background-color: #D458AF;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+/*======================================================================================================================================================*/
+
+
+/*======================================================================================================================================================*/
+
+
+/*=====================================================================
+=======================================================================
+
+Pagina Repositorio*/
+
+#header-repositorio {
+    width: 100%;
+    height: 60vh;
+    background: url(../Img/Imgs/laptop-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#fondo2-header-repositorio {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transition: all 400ms ease-out;
+}
+
+#fondo2-header-repositorio:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#fondo2-header-repositorio h1 {
+    width: 80%;
+    max-width: 900px;
+    margin-top: 20vh;
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+
+/*repositorio*/
+
+#repositorio-caja {
+    width: 100%;
+    min-height: 80vh;
+    padding-bottom: 100px;
+}
+
+#repositorio-titulo {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3em;
+}
+
+#repositorio-subtitulo {
+    display: block;
+    width: 70%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.cajas-caract-repositorio {
+    width: 50%;
+    min-height: 50vh;
+    box-shadow: 0px 0px 8px gray;
+    padding-bottom: 20px;
+}
+
+.caja-titulo-caract-repositorio {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo-fecha {
+    width: 10%;
+    height: 70%;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+#caract-tecnologia .caja-titulo-caract-repositorio {
+    background-color: #18aeff;
+}
+
+#caract-tecnologia .fondo-fecha {
+    background-color: #0288D1;
+}
+
+#caract-confidencia .caja-titulo-caract-repositorio {
+    background-color: #3EE9D1;
+}
+
+#caract-confidencia .fondo-fecha {
+    background-color: #3aaf9e;
+}
+
+#caract-adaptacion .caja-titulo-caract-repositorio {
+    background-color: #CE43EB;
+}
+
+#caract-adaptacion .fondo-fecha {
+    background-color: #AB36C3;
+}
+
+#caract-consistencia .caja-titulo-caract-repositorio {
+    background-color: #18aeff;
+}
+
+#caract-consistencia .fondo-fecha {
+    background-color: #0288D1;
+}
+
+#caract-conversion .caja-titulo-caract-repositorio {
+    background-color: #46B8E9;
+}
+
+#caract-conversion .fondo-fecha {
+    background-color: #3A99C3;
+}
+
+.fecha {
+    text-align: center;
+    color: white;
+}
+
+.fondo-fecha hr {
+    width: 60%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.titulos-caract-repositorio {
+    display: block;
+    width: 80%;
+    margin-left: 0px;
+    color: white;
+    font-weight: 500;
+    font-size: 3em;
+    font-family: Helvetica;
+}
+
+.p-caract-repositorio {
+    display: block;
+    width: 95%;
+    margin-top: 20px;
+}
+
+.w-caja-img-caract-repositorio {
+    width: 95%;
+    height: 50vh;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#img-caract-tecnologia {
+    background-image: url(../Img/Imgs/tecnologia.jpg);
+}
+
+#img-caract-confidencia {
+    background-image: url(../Img/Imgs/confidencial.jpg);
+}
+
+#img-caract-adaptacion {
+    background-image: url(../Img/Imgs/adaptacion.jpg);
+    background-position: center -100px;
+}
+
+#img-caract-consistencia {
+    background-image: url(../Img/Imgs/consistencia.jpg);
+}
+
+#img-caract-conversion {
+    background-image: url(../Img/Imgs/conversion.jpg);
+}
+
+.conector {
+    width: 5px;
+    height: 150px;
+    background-color: rgba(190, 190, 190, 0.6);
 }

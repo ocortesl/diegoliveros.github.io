@@ -8,11 +8,11 @@
         }
         /*=========================================*/
         /*cabecera y menu*/
-        #menu {
+        .menu {
             width: 100%;
             height: 7vh;
         }
-        #menu ul {
+        .menu ul {
             width: 90%;
             margin: 1.5vh auto auto auto;
         }
@@ -88,7 +88,133 @@
         }
         /*=========================================*/
         /*Footer*/
-        #copyright {
+        .copyright {
             margin-top: 1.5vh;
+        }
+        /*======================================================================================================================================================*/
+        /*=====================================================================
+        =======================================================================
+        Pagina encuestas*/
+        #imagen-encuesta {
+            height: 50vh;
+        }
+        /*======================================================================================================================================================*/
+        /*=====================================================================
+        =======================================================================
+        Pagina reportes*/
+        #header-reportes {
+            height: 50vh;
+        }
+        /*=========================================*/
+        /*titulos y cajas*/
+        #creditos-asignatura,
+        #materias,
+        #inscritos {
+            width: 100%;
+            min-height: 90vh;
+            padding-bottom: 30px;
+        }
+        #creditos-asignatura h1,
+        #materias h1,
+        #inscritos h1 {
+            margin-top: 20px;
+        }
+        /*=========================================*/
+        /* Graficas */
+        #chart-estadisticas-asignatura,
+        #chart-estadisticas-materias,
+        #chart-estadisticas-inscritos {
+            max-width: 650px;
+        }
+        /*=========================================*/
+        /*Series e iconos*/
+        #series,
+        #inscritos-series {
+            width: 50%;
+        }
+        /*======================================================================================================================================================*/
+        /*=====================================================================
+        =======================================================================
+        Pagina Propositos de formación*/
+        #header-propositos {
+            height: 50vh;
+            background-position: center center;
+        }
+        #propositos-caja h2 {
+            margin-top: 5vh;
+        }
+        /*Botones filtar*/
+        .btns-filtro {
+            width: 90%;
+        }
+        /*======================================================================================================================================================*/
+        /*=====================================================================
+        =======================================================================
+        Pagina Estrategias didácticas*/
+        #header-estrategias {
+            height: 50vh;
+        }
+        /*Tabla*/
+        #estrategias-caja h2 {
+            margin-top: 5vh;
+        }
+        #tabla-estrategias tr td:nth-child(3) {
+            padding: 20px;
+        }
+        .td-sinfondo img {
+            width: 100%;
+        }
+        /*======================================================================================================================================================*/
+        /*=====================================================================
+        =======================================================================
+        Pagina Necesidades*/
+        #header-necesidades {
+            height: 50vh;
+        }
+        #necesidades-enlaces {
+            margin-top: 5vh;
+        }
+        #necesidades-caja h2 {
+            font-size: 1.4em;
+            font-weight: 500;
+            margin-top: 30px;
+        }
+        #tabla-necesidades {
+            width: 95%;
+            margin-top: 20px;
+        }
+        .td-dobles p {
+            float: none;
+            margin-top: 10px;
+        }
+        .td-dobles p:nth-child(2) {
+            margin-left: 0px;
+        }
+        #ciencias-ciudadania td p,
+        #educacion-ciudadania td:nth-child(2),
+        #educacion-ciudadania td:nth-child(3),
+        #filosofia td:nth-child(2),
+        #filosofia td:nth-child(3),
+        #ingles td:nth-child(2),
+        #ingles td:nth-child(3),
+        #lengua-literatura td:nth-child(2),
+        #lengua-literatura td:nth-child(3),
+        #matematicas td:nth-child(2),
+        #matematicas td:nth-child(3) {
+            border-radius: 10px;
+        }
+        /*======================================================================================================================================================*/
+        /*=====================================================================
+        =======================================================================
+        Pagina Repositorio*/
+        #header-repositorio {
+            height: 50vh;
+        }
+        .cajas-caract-repositorio,
+        #repositorio-subtitulo {
+            width: 80%;
+        }
+        #img-caract-adaptacion {
+            background-position: center;
         }
     }
