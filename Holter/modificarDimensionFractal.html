@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Login Administrador</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/newcss.css">
+        <script src="material/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <form class="container" action="IniciarSesion" method="post">
+            <img src="Imagenes/doctorAdmin.png"/>
+            <div class="menu-buttons-img">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" onclick="window.history.go(-1); return false;">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Menu1.html">
+                    <i class="material-icons">home</i>
+                </button>
+            </div>
+            <div class="menu-buttons-salir-img">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Inicio.html">
+                    <i class="material-icons">exit_to_app</i>
+                </button>
+            </div>
+            <br>
+            <h4>Nueva Configuración <br> Dimensión Fractal Estadística</h4>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="user" name="agudo">
+                <label class="mdl-textfield__label" for="agudo">Estado Agudo</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="user" name="evolucion">
+                <label class="mdl-textfield__label" for="evolucion">Estado Evolución</label>
+            </div><br>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="user" name="normal">
+                <label class="mdl-textfield__label" for="normal">Estado Normal</label>
+            </div><br>
+            <br><br>
+            <%--<input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored" type="submit" value="INGRESAR"/>--%>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" formaction="DimensionFractal.html">
+                Guardar
+            </button>
+            <br><br>
+        </form>
+    </body>
+    <footer> 
+        <p>
+            Powered by <a class="footer-lin" href="">LIIS & PoliSOFT</a>
+        </p>
+    </footer>
+</html>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

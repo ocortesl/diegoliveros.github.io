@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Eliminar Usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/newcss.css">
+        <script src="material/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <form class="container">
+            <div class="menu-buttons">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" onclick="window.history.go(-1); return false;">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Menu1.html">
+                    <i class="material-icons">home</i>
+                </button>
+            </div>
+            <div class="menu-buttons-salir">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Inicio.html">
+                    <i class="material-icons">exit_to_app</i>
+                </button>
+            </div>
+            <h1>Eliminar Usuario</h1>
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="id-paciente">
+                <label class="mdl-textfield__label" for="sample4">Número de Identificación</label>
+                <span class="mdl-textfield__error">Debe ingresar un número</span>
+            </div><br><br><br>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                ELIMINAR
+            </button><br>
+        </form>
+    </body>
+    <footer>
+        <p>
+            Powered by <a class="footer-lin" href="">LIIS & PoliSOFT</a>
+        </p>
+    </footer>
+</html>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

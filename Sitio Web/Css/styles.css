@@ -36,7 +36,8 @@ button {
 
 .w-section {
     width: 100%;
-    height: 100vh;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 h1,
@@ -88,11 +89,14 @@ td {
     background-position: center;
     background-repeat: no-repeat;
     overflow: auto;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 #fondo-cabecera {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 30px;
     overflow: auto;
     transition: all 400ms ease-out;
 }
@@ -239,7 +243,6 @@ td {
     width: 80%;
     max-width: 800px;
     text-align: center;
-    margin-top: 10vh;
 }
 
 #descripcion-caracteristicas {
@@ -251,15 +254,15 @@ td {
 
 #caja-caracteristicas {
     width: 100%;
-    height: 250px;
+    margin-top: 30px;
+    min-height: 250px;
     display: flex;
-    align-items: center;
-    margin-top: 10vh;
 }
 
 .w-cajas-caracteristicas {
     width: 30%;
     display: flex;
+    margin-top: 10px;
 }
 
 .iconos-caracteristicas {
@@ -270,7 +273,7 @@ td {
 .caracteristicas-subtitulos {
     width: 90%;
     max-width: 300px;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 10px;
 }
 
@@ -303,7 +306,6 @@ td {
     width: 80%;
     max-width: 800px;
     text-align: center;
-    margin-top: 10vh;
 }
 
 #galeria-productos p {
@@ -359,7 +361,6 @@ td {
 
 #titulos-testimonios {
     text-align: center;
-    margin-top: 15vh;
     color: gray;
 }
 
@@ -372,8 +373,9 @@ td {
 
 #caja-testimonios {
     width: 150%;
-    height: 300px;
+    min-height: 300px;
     margin-top: 5vh;
+    padding-bottom: 20px;
     display: flex;
     align-items: center;
     margin-left: -25%;
@@ -438,26 +440,17 @@ td {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
 }
 
 #formulario-1 {
     width: 60%;
     max-width: 700px;
-    max-height: 65vh;
-    overflow: auto;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding: 30px;
 }
 
 #formulario-1 h1 {
-    margin-top: 3%;
     text-align: center;
     color: gray;
 }
@@ -470,10 +463,9 @@ td {
 
 #mensaje {
     width: 100%;
-    height: 100px;
+    height: 150px;
     margin-top: 3vh;
     padding: 5px;
-    border-radius: 5px;
     color: gray;
     outline: none;
     border: 2px solid gray;
@@ -526,7 +518,6 @@ td {
 
 #descargar-app h1 {
     text-align: center;
-    margin-top: 30vh;
 }
 
 #descargar-app p {
@@ -567,14 +558,13 @@ td {
 
 footer {
     width: 100%;
-    height: 120px;
     background-color: black;
     overflow: auto;
+    padding-bottom: 30px;
 }
 
 .menu-footer {
     width: 70%;
-    height: 5vh;
     margin-top: 3vh;
     display: flex;
 }
@@ -589,6 +579,10 @@ footer {
     padding-left: 10px;
     color: lightgray;
     transition: all 200ms ease;
+}
+
+.menu-footer li:nth-child(1) a {
+    padding-left: 0px;
 }
 
 .menu-footer li:nth-child(5) a {
@@ -710,8 +704,7 @@ Pagina encuestas*/
 
 #enviar-encuesta {
     display: block;
-    width: 10%;
-    height: 25px;
+    padding: 5px;
     text-align: center;
     margin-left: 0px;
     border: 2px solid gray;
@@ -724,8 +717,7 @@ Pagina encuestas*/
 }
 
 #enviar-encuesta:hover {
-    width: 11%;
-    height: 28px;
+    transform: scale(1.3);
     background: blue;
     border: none;
 }
@@ -775,14 +767,6 @@ Pagina reportes*/
 
 /*titulos y cajas*/
 
-#creditos-asignatura,
-#materias,
-#inscritos {
-    width: 100%;
-    min-height: 100vh;
-    padding-bottom: 100px;
-}
-
 .hr-titulos {
     width: 60%;
     height: 2px;
@@ -801,7 +785,6 @@ Pagina reportes*/
 #materias h1,
 #inscritos h1 {
     text-align: center;
-    margin-top: 50px;
 }
 
 
@@ -855,7 +838,7 @@ Pagina Propositos de formación*/
     background: url(../Img/Imgs/Equipo2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center -300px;
+    background-position: center center;
 }
 
 #fondo2-header-propositos {
@@ -878,14 +861,7 @@ Pagina Propositos de formación*/
     padding: 15px;
 }
 
-#propositos-caja {
-    width: 100%;
-    min-height: 80vh;
-    padding-bottom: 70px;
-}
-
 #propositos-caja h2 {
-    margin-top: 10vh;
     text-align: center;
 }
 
@@ -1019,14 +995,7 @@ Pagina Estrategias didácticas*/
     padding: 15px;
 }
 
-#estrategias-caja {
-    width: 100%;
-    min-height: 80vh;
-    padding-bottom: 70px;
-}
-
 #estrategias-caja h2 {
-    margin-top: 10vh;
     text-align: center;
 }
 
@@ -1086,15 +1055,8 @@ Pagina Necesidades*/
     padding: 15px;
 }
 
-#necesidades-caja {
-    width: 100%;
-    min-height: 80vh;
-    padding-bottom: 70px;
-}
-
 #necesidades-enlaces {
     width: 90%;
-    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;

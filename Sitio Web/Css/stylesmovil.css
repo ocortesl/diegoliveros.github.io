@@ -1,11 +1,11 @@
 @media screen and (max-width: 520px) {
     /*Generales*/
     .w-section {
-        width: 100%;
-        height: 70vh;
+        padding-bottom: 50px;
+        padding-top: 50px;    
     }
     .size-titulos {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     .size-p {
         font-size: 0.9em;
@@ -13,7 +13,7 @@
     /*=========================================*/
     /*cabecera y menu*/
     #fondo-cabecera {
-        height: 70vh;
+        min-height: 70vh;
     }
     .menu {
         display: none;
@@ -77,7 +77,7 @@
     }
     #inicio h1 {
         width: 90%;
-        margin-top: 10vh;
+        margin-top: 15vh;
     }
     #play {
         font-size: 40px;
@@ -88,10 +88,10 @@
     /*=========================================*/
     /*Caracteristicas y beneficios*/
     #caracteristicas-beneficios {
-        height: 1100px;
+        min-height: 1100px;
     }
     #caja-caracteristicas {
-        height: 800px;
+        min-height: 800px;
         flex-direction: column;
         margin-top: 5vh;
     }
@@ -103,11 +103,11 @@
     /*=========================================*/
     /*galeria*/
     #galeria-productos {
-        height: 1300px;
+        min-height: 1300px;
     }
     #imagenes {
         width: 100%;
-        height: 950px;
+        min-height: 950px;
         margin-top: 5vh;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -123,9 +123,7 @@
         min-height: 900px;
         overflow: auto;
     }
-    #titulos-testimonios {
-        margin-top: 10vh;
-    }
+    
     #caja-testimonios {
         width: 100%;
         flex-direction: column;
@@ -141,8 +139,13 @@
     }
     /*=========================================*/
     /*ponte en contacto*/
-    #formulario-1 h1 {
-        margin-top: 0%;
+    #tu-correo,
+    #nombre-completo,#enviar {
+    width: 100%;
+    float: none;
+    }
+    #formulario-1 {
+        width: 90%;
     }
     /*=========================================*/
     /*Descargar la app*/
@@ -159,14 +162,17 @@
     /*=========================================*/
     /*Footer*/
     .menu-footer {
-        width: 95%;
+        width: 100%;
     }
     .menu-footer li a {
-        font-size: 0.9em;
+        display: none;
     }
-    .menu-footer li a {
-        padding-right: 10px;
+    .copyright {
+        margin-top: 1.5vh;
+        font-size: 0.7em;
     }
+
+    
     /*======================================================================================================================================================*/
     /*=====================================================================
     =======================================================================
@@ -192,13 +198,6 @@
         margin-top: 15vh;
     }
     /*=========================================*/
-    /*titulos y cajas*/
-    #creditos-asignatura,
-    #materias,
-    #inscritos {
-        min-height: 80vh;
-    }
-    /*=========================================*/
     /* Graficas */
     #chart-estadisticas-asignatura,
     #chart-estadisticas-materias,
@@ -209,7 +208,17 @@
     /*Series e iconos*/
     #series,
     #inscritos-series {
-        width: 70%;
+        width: 80%;
+    }
+    .series-p,
+    .inscritos-series-p {
+        font-size: 0.9em;
+    }
+
+    #creditos-asignatura h1,
+    #materias h1,
+    #inscritos h1 {
+        font-size: 1.5em;
     }
     /*======================================================================================================================================================*/
     /*=====================================================================
@@ -222,9 +231,7 @@
     #fondo2-header-propositos h1 {
         margin-top: 15vh;
     }
-    #propositos-caja h2 {
-        margin-top: 7vh;
-    }
+   
     /*Botones filtar*/
     .bnt-filtro-todo,
     .bnt-filtro-nombre,
@@ -232,14 +239,19 @@
     .bnt-filtro-nivel1,
     .bnt-filtro-nivel2,
     .bnt-filtro-nivel3 {
-        font-size: 1em;
+        font-size: 0.8em;
     }
     /*Tabla*/
     #tabla-propositos th:nth-child(2) {
         width: 30%;
     }
+    #tabla-propositos tr, #tabla-propositos td{
+        font-size: 0.8em;  
+    }
+
     #tabla-propositos td {
         padding: 15px;
+        font-size: 0.8em;
     }
     /*======================================================================================================================================================*/
     /*=====================================================================
@@ -251,9 +263,7 @@
     #fondo2-header-estrategias h1 {
         margin-top: 15vh;
     }
-    #estrategias-caja h2 {
-        margin-top: 7vh;
-    }
+
     /*Tabla*/
     #tabla-estrategias tr td:nth-child(3) {
         width: 60%;
@@ -263,7 +273,7 @@
     #th-ilustracion {
         display: none;
     }
-    #tabla-estrategias tr td {
+    #tabla-estrategias tr, #tabla-estrategias td {
         font-size: 0.8em;
     }
     /*======================================================================================================================================================*/
@@ -276,18 +286,44 @@
     #fondo2-header-necesidades h1 {
         margin-top: 15vh;
     }
+
+    
+
     #btns-guardar-compartir {
         margin-right: 0px;
-        width: 50%;
+        width: 80%;
+    }
+
+    #btns-pestañas {
+        flex-wrap: wrap;
+    }
+
+    #btns-pestañas button {
+        width: 40%;
+        margin-top: 10px;
+    }
+    #necesidades-caja h2 {
+        font-size: 1em;
     }
     #guardar,
     #compartir {
         padding: 3px;
         margin-left: 3px;
-        margin-right: 10px;
+        margin-right: 5px;
     }
     #necesidades-caja h2 br {
         display: block;
+    }
+
+    #tabla-necesidades,
+    #tabla-necesidades th,
+    #tabla-necesidades td {
+    border-spacing: 5px 10px;
+    }
+    
+    #tabla-necesidades tr,
+    #tabla-necesidades td {
+        font-size: 0.8em;   
     }
     /*======================================================================================================================================================*/
     /*=====================================================================
@@ -304,17 +340,26 @@
         width: 90%;
     }
     #repositorio-titulo {
+        font-size: 2.5em;
         margin-top: 30px;
     }
     #repositorio-subtitulo {
         margin-bottom: 50px;
     }
     .titulos-caract-repositorio {
-        font-size: 2.5em;
+        font-size: 1.6em;
         font-weight: 400;
+        margin-left: 10px;
     }
     .w-caja-img-caract-repositorio {
         height: 40vh;
+    }
+    .fondo-fecha {
+        width: 15%;
+        height: 60%;
+        font-size: 0.8em;
+        margin-left: 10px;
+        padding: 3px;
     }
     .conector {
         height: 100px;

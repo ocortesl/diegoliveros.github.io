@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Record</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="Css/newcss.css">
+        <script src="material/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <div class="containerAncho">
+            <form class="menu-buttons">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" onclick="window.history.go(-1); return false;">
+                    <i class="material-icons">arrow_back</i>
+                </button>
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Menu1.html">
+                    <i class="material-icons">home</i>
+                </button>
+            </form>
+            <form class="menu-buttons-salir">
+                <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored" formaction="Inicio.html">
+                    <i class="material-icons">exit_to_app</i>
+                </button>
+            </form>
+            <h1 class="text">Récord del Paciente</h1>
+            <br>
+            <label>Nombre Paciente: Pepito Perez</label><br>
+            <label>Edad: 15 años </label><br>
+            <label>Género: Masculino </label><br>
+            <label>Cédula de ciudadanía: 10262841278</label><br>
+            <h4>Resultado de evaluación de Holter del paciente y ficha médica</h4>
+            <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp" id="tablaRecord">
+                <thead>
+                    <tr>
+                        <th>FECHA</th>
+                        <th>Dx</th>
+                        <th>Df</th>
+                        <th>R^2</th>
+                        <th>ENLACE EVALUACIÓN HOLTER</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- fila 1 -->
+                    <tr><td>04/05/1995</td><td>643,5</td><td>234,5</td><td>0,732</td><td><A href="HistoriaCompleta.html">www.enlace1.com</A></td></tr>
+                    <!-- fila 2 -->
+                    <tr><td>04/05/1995</td><td>22</td><td>234,5</td><td>0,763</td><td><A href="HistoriaCompleta.html">www.enlace2.com</A></td></tr>
+                    <!-- fila 3 -->
+                    <tr><td>04/02/1997</td><td>12,45</td><td>745,4</td><td>0,782</td><td><A href="HistoriaCompleta.html">www.enlace3.com</A></td></tr>
+                    <!-- fila 4 -->
+                    <tr><td>04/07/1998</td><td>643,5</td><td>153,5</td><td>0,776</td><td><A href="HistoriaCompleta.html">www.enlace4.com</A></td></tr>
+                    <!-- fila 5 -->
+                    <tr><td>04/03/1998</td><td>23,12</td><td>642,8</td><td>0,718</td><td><A href="HistoriaCompleta.html">www.enlace5.com</A></td></tr>
+                    <!-- fila 6 -->
+                    <tr><td>05/06/1999</td><td>6,53</td><td>436,1</td><td>0,786</td><td><A href="HistoriaCompleta.html">www.enlace6.com</A></td></tr>
+                    <!-- fila 7 -->
+                    <tr><td>12/06/1993</td><td>34,65</td><td>134,4</td><td>0,757</td><td><A href="HistoriaCompleta.html">www.enlace7.com</A></td></tr>
+                    <!-- fila 8 -->
+                    <tr><td>22/04/1995</td><td>234,5</td><td>123,3</td><td>0,777</td><td><A href="HistoriaCompleta.html">www.enlace8.com</A></td></tr>
+                    <!-- fila 9 -->
+                    <tr><td>12/05/1997</td><td>55,5</td><td>654,5</td><td>0,747</td><td><A href="HistoriaCompleta.html">www.enlace9.com</A></td></tr>
+                    <!-- fila 10 -->
+                    <tr><td>23/12/1998</td><td>14,5</td><td>978</td><td>0,731</td><td><A href="HistoriaCompleta.html">www.enlace10.com</A></td></tr>
+                </tbody>
+            </table>
+
+            <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="return agregarFila();">
+                <i class="material-icons" id="mas2">add</i>
+                <div class="mdl-tooltip" data-mdl-for="mas2">Agregar Fila</div>
+            </button>
+            <br><br><br>
+
+
+        </div>
+    </body>
+    <footer> 
+        <p>
+            Powered by <a class="footer-lin" href="Historia.html">LIIS & PoliSOFT</a>
+        </p>
+    </footer>
+</html>
+
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>

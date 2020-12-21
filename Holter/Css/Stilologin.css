@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24/04/2017, 08:48:45 PM
+    Author     : LIIS
+*/
+
+.container{
+    margin-top: 10%;
+    color: black;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 400%;
+}
+.parrafo{
+    margin-top: 2%;
+    margin-left: 10%;
+    font-family: "Homer Simpson",cursive;
+    font-size:125%;
+    text-align: left;
+    color:black;
+}
+.form-group{
+     margin-top:2%;
+     margin-left: 10%;
+     margin-right: 10%;
+     color:black;
+     font-family: "sans-serif",cursive;
+     font-size: 150%    
+}
+.alineacionbotones{
+    text-align: center;
+}
+.botones {
+        color:navy;
+        background-color:white;
+        padding: 5px 20px 5px 20px;
+        font-family: Comic Sans MS, Calibri, Arial; 
+        border-radius:24px;
+        border:2px black solid;
+        font-size: 14px;
+        font-weight: bold;
+        margin:10px auto;
+        
+}
+.botones:hover {
+	background-color:aquamarine;
+        color:black;
+}
+

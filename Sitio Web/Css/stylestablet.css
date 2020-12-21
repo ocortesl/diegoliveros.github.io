@@ -18,7 +18,6 @@
         }
         #inicio h1 {
             width: 100%;
-            margin-top: 30vh;
         }
         #inicio p {
             margin-top: 5vh;
@@ -34,6 +33,7 @@
         .w-cajas-caracteristicas {
             flex-direction: column;
             justify-content: center;
+            margin-top: 20px;
         }
         .iconos-caracteristicas {
             text-align: center;
@@ -73,9 +73,6 @@
         #formulario-1 {
             width: 70%;
         }
-        #formulario-1 h1 {
-            margin-top: 5%;
-        }
         /*=========================================*/
         /*Descargar la app*/
         #descargar {
@@ -88,8 +85,15 @@
         }
         /*=========================================*/
         /*Footer*/
+        .menu-footer {
+            margin-top: 5vh;
+            width: 80%;
+        }
+        .menu-footer li a {
+            font-size: 1em;
+        }
         .copyright {
-            margin-top: 1.5vh;
+            margin-top: 5vh;
         }
         /*======================================================================================================================================================*/
         /*=====================================================================
@@ -106,20 +110,7 @@
             height: 50vh;
         }
         /*=========================================*/
-        /*titulos y cajas*/
-        #creditos-asignatura,
-        #materias,
-        #inscritos {
-            width: 100%;
-            min-height: 90vh;
-            padding-bottom: 30px;
-        }
-        #creditos-asignatura h1,
-        #materias h1,
-        #inscritos h1 {
-            margin-top: 20px;
-        }
-        /*=========================================*/
+    
         /* Graficas */
         #chart-estadisticas-asignatura,
         #chart-estadisticas-materias,
@@ -140,9 +131,7 @@
             height: 50vh;
             background-position: center center;
         }
-        #propositos-caja h2 {
-            margin-top: 5vh;
-        }
+       
         /*Botones filtar*/
         .btns-filtro {
             width: 90%;
@@ -155,9 +144,6 @@
             height: 50vh;
         }
         /*Tabla*/
-        #estrategias-caja h2 {
-            margin-top: 5vh;
-        }
         #tabla-estrategias tr td:nth-child(3) {
             padding: 20px;
         }
@@ -171,13 +157,9 @@
         #header-necesidades {
             height: 50vh;
         }
-        #necesidades-enlaces {
-            margin-top: 5vh;
-        }
         #necesidades-caja h2 {
             font-size: 1.4em;
             font-weight: 500;
-            margin-top: 30px;
         }
         #tabla-necesidades {
             width: 95%;
