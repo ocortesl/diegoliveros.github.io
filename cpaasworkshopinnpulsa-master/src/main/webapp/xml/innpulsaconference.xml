@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Dial>
+        <Conference startConferenceOnEnter="true" callbackMethod="POST" callbackUrl="https://demo9758806.mockable.io/inbound-outbound-conference?action=conferencestatus" hangupOnStar="true" digitsMatch="1,2" beep="True" maxParticipants="10">innpulsaconference</Conference>
+    </Dial>
+</Response>

@@ -1,0 +1,11 @@
+<Response>
+  <!-- Opcion 2.2 -->
+  <Say voice="woman" language="es-us">La conferencia de si paz iniciara despues del tono</Say>
+  <Dial>
+      <Conference startConferenceOnEnter="true" record="true" beep="true" hangupOnStar="true" maxParticipants="5" recordCallbackUrl="https://requestinspector.com/inspect/j0z.666">CPaaSConference</Conference>
+  </Dial>
+  <!-- Fin del flujo -->
+  <Gather method="GET" numDigits="1" finishOnKey="#" action="http://tufileserver/InboundXML/LastRedirect.xml">
+    <Say voice="woman" language="es-us">Presiona UNO para volver al menu principal, Presiona DOS para terminar la llamada</Say>
+  </Gather>
+</Response>

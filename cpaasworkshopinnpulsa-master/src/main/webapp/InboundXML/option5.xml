@@ -1,0 +1,4 @@
+<Response>
+    <!-- Opcion 5, regresar al menu principal -->
+    <Redirect method="GET">http://tufileserver/InboundXML/main.xml</Redirect>
+</Response>

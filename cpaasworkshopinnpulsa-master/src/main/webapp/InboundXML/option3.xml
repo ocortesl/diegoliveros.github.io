@@ -1,0 +1,6 @@
+<Response>
+  <!-- Opcion dos, Submenu de opciones de texto -->
+  <Gather method="GET" numDigits="1" finishOnKey="#" action="http://tufileserver/InboundXML/option3/option3redirect.xml">
+    <Say voice="woman" language="es-us">Presiona UNO para conferencia de seguridad, Presiona DOS para conferencia de si paz</Say>
+  </Gather>
+</Response>

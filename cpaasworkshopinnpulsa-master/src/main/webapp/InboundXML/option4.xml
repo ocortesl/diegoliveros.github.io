@@ -1,0 +1,8 @@
+<Response>
+    <!-- Opcion cuatro, escuchar anuncio -->
+    <Play>https://www.sinj.com/sounds/mp3s/Classical/Bach%20-%20French%20Suite%202,%204%20-%20Air.mp3</Play>
+    <!-- Fin del flujo -->
+    <Gather method="GET" numDigits="1" finishOnKey="#" action="http://tufileserver/InboundXML/LastRedirect.xml">
+      <Say voice="woman" language="es-us">Presiona UNO para volver al menu principal, Presiona DOS para terminar la llamada</Say>
+    </Gather>
+</Response>

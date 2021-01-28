@@ -1,0 +1,11 @@
+service\cpaasworkshop\innpulsa\util\Constants.class
+service\cpaasworkshop\innpulsa\log\EscribirEnLog.class
+service\cpaasworkshop\innpulsa\models\CallConnectModel.class
+service\cpaasworkshop\innpulsa\cpaasworkshop.class
+service\cpaasworkshop\innpulsa\models\ConferenceStatusModel.class
+service\cpaasworkshop\innpulsa\models\SmsStatusCallBack.class
+service\cpaasworkshop\innpulsa\servlets\InBoundAndOutBoundConferenceURL.class
+service\cpaasworkshop\innpulsa\servlets\OutBoundCallURL.class
+service\cpaasworkshop\innpulsa\util\Constants_Attributes.class
+service\cpaasworkshop\innpulsa\util\Funciones.class
+service\cpaasworkshop\innpulsa\servlets\OutBoundSMSURL.class

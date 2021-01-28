@@ -1,0 +1,11 @@
+<Response>
+    <!-- Opcion uno, grabar mensaje y reproducirlo -->
+    <Say voice="woman" language="es-us">Graba tu mensaje y al finalizar presiona numeral.</Say>
+    <Record background="false" playBeep="true" finishOnKey="#"/>
+    <Say voice="woman" language="es-us">Su mensaje es:</Say>
+    <PlayLastRecording/>
+    <!-- Fin del flujo -->
+    <Gather method="GET" numDigits="1" finishOnKey="#" action="http://tufileserver/InboundXML/LastRedirect.xml">
+      <Say voice="woman" language="es-us">Presiona UNO para volver al menu principal, Presiona DOS para terminar la llamada</Say>
+    </Gather>
+</Response>

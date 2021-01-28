@@ -1,0 +1,8 @@
+<Response>
+    <!-- Opcion 1, Enviar SMS -->
+    <Say voice="woman" language="es-us">Enviando el SMS al area de seguridad.</Say>
+    <Sms from="+18152054154" to="+17863930499">Mensaje de ejemplo para el Hackaton</Sms>
+    <Gather method="GET" numDigits="1" finishOnKey="#" action="http://tufileserver/InboundXML/LastRedirect.xml">
+      <Say voice="woman" language="es-us">Presiona UNO para volver al menu principal, Presiona DOS para terminar la llamada</Say>
+    </Gather>
+</Response>
