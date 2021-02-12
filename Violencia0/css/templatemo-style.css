@@ -286,6 +286,15 @@ small {
   width: 400px;
   height: auto;
 }
+.tm-call-to-action-image1 {
+  margin-right: 20px;
+  width: 350px;
+  height: auto;
+  margin-bottom: 20px;
+  object-fit: cover;
+
+}
+
 
 .tm-call-to-action-text {
   padding: 50px 60px;
