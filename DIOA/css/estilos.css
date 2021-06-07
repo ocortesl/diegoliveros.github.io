@@ -1,11 +1,12 @@
-.ima {border-radius: 50%;}
+.ima {border-radius: 50%;
+margin: auto;}
 .p {text-align: justify;
 text-justify: inter-word;
 }
 .w3{
 background-color: #0c6da2!important;
 color: white;
-            }
+}
 
 
 .footer p {
@@ -24,7 +25,11 @@ color: white;
  justify-content: center;
  align-items: center;
 }
-#menu {
+
+/*
+    MENU
+*/
+.menu {
 margin: auto;
 width: auto;
 top: 0px;
@@ -114,3 +119,12 @@ min-width: 140px:
 		background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
 		padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
 	}
+
+  /*
+      proyectos
+  */
+  .proyectos{
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+  }
