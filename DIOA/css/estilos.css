@@ -6,17 +6,14 @@ text-justify: inter-word;
 background-color: #0c6da2!important;
 color: white;
             }
-.ad-right {
-float: right;
-margin-left: 10px;
-}
+
 
 .footer p {
   background-color: #0F3345!important;
   color: white;
   margin: 20px;
   border:20px;
-  padding:20px;
+  padding:20px 0;
   text-align: center;
 }
 .container{
