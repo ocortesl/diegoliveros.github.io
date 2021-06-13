@@ -20,7 +20,9 @@
        /*  border: 1px solid #999;*/
         display: inline-flex;   /* para la alineación de los elementos*/
         width: 600px;
-  padding:20px 0px 20px 0px;
+        padding:20px 0px 20px 0px;
+        margin: 20px 0px 20px 0px;
+
       }
 
 .Imagen img {
