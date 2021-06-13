@@ -1,3 +1,9 @@
+.Ficha  {
+        float: left;
+        text-align: justify;
+        text-justify: inter-word;
+          display: inline-block;
+      }
 .head {
       background-color: #0F3345!important;
       color: #f1f1f1;
@@ -6,34 +12,49 @@
       padding: 20px 20px 20px 20px;
       text-align: center;
       font-family: verdana;
+      height: 150px!important;
 }
 .Imagen img {
-    border-radius: 50%;
-  margin: 40px 10px 10px 10px;
+  vertical-align: top!important;
+border-radius: 50%;
+    margin: 5px 10px 5px 10px;
+    padding:20px 0px 20px 0px;
+    border: 0px 0px 0px 0px;
+    width: 150px!important;
+    height: 150px!important;
+      float: none;
+}
+.Imagen div{
+  margin: 0px 0px 0px 0px;
   padding:0px 0px 0px 0px;
   border: 0px 0px 0px 0px;
-    width: 150px;
-    height: 150px;
-    float: right;
-          float: Auto;
+
 
 }
 .Parrafo p {
-        text-align: justify;
-        float: Auto;
-        text-justify: inter-word;
-        padding:10px 30px 10px 10px;
-        border: 10px 10px 10px 10px;
-        width: 400px;
-        height: 200px;
-}
-.Ficha div {
-        float: Auto;
+  vertical-align: top!important;
+
         text-align: justify;
         float: left;
         text-justify: inter-word;
+        margin: 5px 5px 16px 5px;
+        border: 0px 0px 0px 0px;
+        padding:10px 30px 10px 10px;
+        width: 300px!important;
+        height: 150px!important;
 
+      }
+.Parrafo h2 {
+                text-align: justify;
+                float: auto;
+                text-justify: inter-word;
+                margin: 5px 40px 5px 5px;
+                border: 0px 0px 0px 0px;
+                padding:0px 10px 0px 10px;
+                width: 300px!important;
+                height: 27px!important;
 }
+
 
 .iframe{
   margin: 20px 0px 20px 20px;
