@@ -19,7 +19,7 @@
 .Ficha  {
        /*  border: 1px solid #999;*/
         display: inline-flex;   /* para la alineación de los elementos*/
-        width: 470px;
+        width: 500px;
         padding:20px 0px 20px 0px;
         margin: 20px 0px 20px 0px;
 
@@ -62,7 +62,7 @@
     margin: 5px 5px 5px 5px;
     border: 0px 0px 0px 0px;
     padding:10px 10px 10px 10px;
-    width: 250px!important;
+    width: 300px!important;
     height: 150px!important;
       }
 
