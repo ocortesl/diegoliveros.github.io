@@ -28,7 +28,7 @@
 .Imagen img {
 /*  border: 1px solid #999;*/
   border-radius: 50%;
-  vertical-align: top!important;
+  vertical-align: top!important;   /* con display inline block*/
   margin: 5px 10px 5px 10px;
   padding:20px 0px 20px 0px;
   border: 0px 0px 0px 0px;
