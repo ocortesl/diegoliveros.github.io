@@ -1,31 +1,58 @@
-.ima {border-radius: 50%;
-margin: auto;}
-.p {text-align: justify;
-text-justify: inter-word;
+.head {
+      background-color: #0F3345!important;
+      color: #f1f1f1;
+      margin: 0px 0px 0px 0px;
+      border:0px; /*solid blue; */
+      padding: 20px 20px 20px 20px;
+      text-align: center;
+      font-family: verdana;
 }
-.w3{
-background-color: #0c6da2!important;
-color: white;
+.Imagen img {
+    border-radius: 50%;
+  margin: 40px 10px 10px 10px;
+  padding:0px 0px 0px 0px;
+  border: 0px 0px 0px 0px;
+    width: 150px;
+    height: 150px;
+    float: right;
+          float: Auto;
+
+}
+.Parrafo p {
+        text-align: justify;
+        float: Auto;
+        text-justify: inter-word;
+        padding:10px 30px 10px 10px;
+        border: 10px 10px 10px 10px;
+        width: 400px;
+        height: 200px;
+}
+.Ficha div {
+        float: Auto;
+        text-align: justify;
+        float: left;
+        text-justify: inter-word;
+
 }
 
 .iframe{
-  align center;
+  margin: 20px 0px 20px 20px;
+  padding: 20px 0px 20px 20px;
+  scroll-behavior: smooth;
+  border: 0px 0px 0px 0px;
+  width: 100%;
+  height: 1000px;
+  border:2px solid #0F3345;
+
+
 }
 .footer p {
   background-color: #0F3345!important;
   color: white;
-  margin: 20px;
-  border:20px;
-  padding:20px 0;
+  margin: 0px 0px 0px 0px;
+  border: 0px 0px 0px 0px;
+  padding:20px 0px 20px 0px;
   text-align: center;
-}
-.container{
-  margin: 20px;
-  border:20px;
-  padding:20px;
-  display: flex;
- justify-content: center;
- align-items: center;
 }
 
 /*
@@ -36,19 +63,9 @@ margin: auto;
 width: auto;
 top: 0px;
 margin-top: 0px;
+align-items: center;
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Segoe UI",Arial,sans-serif;
-    font-weight: 400;
-    margin: 0px 0;
-}
-#Titulo h1 {
-    margin-top: 0px !important;
-    color: #fff!important;
-    border: 10px;
-    padding-left: 20px;
-    background-color: #0F3345!important;
-}
+
 
 ul, ol{
   list-style: none;    <!-- *****sin puntos***** -->
@@ -125,8 +142,3 @@ min-width: 140px:
   /*
       proyectos
   */
-  .proyectos{
-    margin: 20px;
-    padding: 20px;
-    border: 20px;
-  }
