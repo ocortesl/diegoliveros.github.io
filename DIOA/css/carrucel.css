@@ -24,7 +24,8 @@ top: 50%;
 width: auto;
 margin-top: -22px;
 padding: 16px;
-color: white;
+color: #0f3345;
+background-color: #e1e2e7;
 font-weight: bold;
 font-size: 18px;
 transition: 0.6s ease;
@@ -34,13 +35,15 @@ user-select: none;
 
 /* Position the "next button" to the right */
 .next {
+  color: #0f3345;
 right: 0;
 border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
+background-color: #717171;
+
 }
 
 /* Caption text */
